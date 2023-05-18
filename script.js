@@ -42,7 +42,6 @@ function createSummonerCard(summonerData, rankedData) {
     card.innerHTML = `
         <h2>${summonerData.name}</h2>
         <p><strong>Nível:</strong> ${summonerData.summonerLevel}</p>
-        <p><strong>Ícone de Perfil:</strong></p>
         <img src="http://ddragon.leagueoflegends.com/cdn/11.11.1/img/profileicon/${summonerData.profileIconId}.png" alt="Ícone de Perfil" width="100" height="100">
         <p><strong>Classificação:</strong> ${getRankedInfo(rankedData)}</p>
         <p><strong>Winrate Total:</strong> ${calculateWinrate(rankedData[0].wins, rankedData[0].losses)}%</p>
