@@ -1,4 +1,4 @@
-var apiKey = "RGAPI-064f4de1-244f-415a-ad1c-bed6a6244278"; 
+var apiKey = "RGAPI-9f1753e4-494c-4efb-acf3-09816372744d"; 
 console.log("mamada na transversal");
 function getSummonerInfo() {
     var username = document.getElementById("username").value;
