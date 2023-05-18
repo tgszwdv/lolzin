@@ -45,8 +45,9 @@ function createSummonerCard(summonerData, rankedData) {
         <img src="http://ddragon.leagueoflegends.com/cdn/11.11.1/img/profileicon/${summonerData.profileIconId}.png" alt="Ícone de Perfil" width="100" height="100">
         <p><strong>Classificação:</strong> ${getRankedInfo(rankedData)}</p>
         <p><strong>Winrate Total:</strong> ${calculateWinrate(rankedData[0].wins, rankedData[0].losses)}%</p>
+        <p><strong>Vitórias na Temporada Atual:</strong> ${rankedData[0].wins}</p>
+        <p><strong>Derrotas na Temporada Atual:</strong> ${rankedData[0].losses}</p>
     `;
-
     // Adiciona o botão para remover o card
     var removeButton = document.createElement("button");
     removeButton.textContent = "Remover";
